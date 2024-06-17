@@ -1,6 +1,8 @@
 ﻿
 using System.Text;
 using System.Windows.Forms;
+using System.Windows.Input;
+
 
 namespace AutoClicker
 {
@@ -51,6 +53,16 @@ namespace AutoClicker
             {
                 case Keys.Back:
                     return "Backspace";
+                case Mouse.LeftButton:
+                    return "LMB";
+                case Mouse.RightButton:
+                    return "RMB";
+                case Mouse.MiddleButton:
+                    return "MMB";
+                case Mouse.XButton1:
+                    return "XB1";
+                case Mouse.XButton2:
+                    return "XB2";
                 case Keys.Tab:
                     return "Tab";
                 case Keys.Return:
